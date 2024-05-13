@@ -1,0 +1,874 @@
+{
+	"info": {
+		"_postman_id": "1d64963d-e5d3-401d-85c6-ff1687f9640a",
+		"name": "Posts manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/posts?page=3&top=true&user_id=24",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"posts"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "3"
+								},
+								{
+									"key": "top",
+									"value": "true"
+								},
+								{
+									"key": "user_id",
+									"value": "24"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Index",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:3000/posts?page=3",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3000",
+									"path": [
+										"posts"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"959b1000d3646eb70f601a0cae18298b\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "9aeea700-3f0e-46eb-8c95-bb4bc1171843"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.171834"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=1.28, sql.active_record;dur=2.02, instantiation.active_record;dur=0.10, process_action.action_controller;dur=7.81"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 21,\n        \"title\": \"Ut illo et.\",\n        \"body\": \"Quaerat voluptatem quo quos voluptatem quae eos voluptas quis maxime.\",\n        \"user_id\": 31,\n        \"created_at\": \"2024-05-13T18:11:39.324Z\",\n        \"updated_at\": \"2024-05-13T18:11:39.324Z\"\n    },\n    {\n        \"id\": 22,\n        \"title\": \"Rerum ab odio.\",\n        \"body\": \"Sed modi inventore molestias iste ipsam nostrum et aut quis.\",\n        \"user_id\": 24,\n        \"created_at\": \"2024-05-13T18:11:39.340Z\",\n        \"updated_at\": \"2024-05-13T18:11:39.340Z\"\n    },\n    {\n        \"id\": 23,\n        \"title\": \"Rerum ipsum quam.\",\n        \"body\": \"Consequuntur quia dolorem ipsum officiis distinctio vel maiores quas excepturi.\",\n        \"user_id\": 36,\n        \"created_at\": \"2024-05-13T18:11:39.354Z\",\n        \"updated_at\": \"2024-05-13T18:11:39.354Z\"\n    },\n    {\n        \"id\": 24,\n        \"title\": \"Eligendi autem animi.\",\n        \"body\": \"Magnam qui iste aperiam non dolorum quo facere distinctio cumque.\",\n        \"user_id\": 29,\n        \"created_at\": \"2024-05-13T18:11:39.367Z\",\n        \"updated_at\": \"2024-05-13T18:11:39.367Z\"\n    },\n    {\n        \"id\": 25,\n        \"title\": \"Molestias enim quasi.\",\n        \"body\": \"Numquam vel aut temporibus totam error deleniti repudiandae quia omnis.\",\n        \"user_id\": 39,\n        \"created_at\": \"2024-05-13T18:11:39.380Z\",\n        \"updated_at\": \"2024-05-13T18:11:39.380Z\"\n    },\n    {\n        \"id\": 26,\n        \"title\": \"Sed quia mollitia.\",\n        \"body\": \"Repellendus dicta beatae tempora et suscipit eveniet sit doloremque saepe.\",\n        \"user_id\": 40,\n        \"created_at\": \"2024-05-13T18:11:39.397Z\",\n        \"updated_at\": \"2024-05-13T18:11:39.397Z\"\n    },\n    {\n        \"id\": 27,\n        \"title\": \"Sed molestiae et.\",\n        \"body\": \"Maiores omnis eaque eos incidunt facilis ut expedita rerum qui.\",\n        \"user_id\": 39,\n        \"created_at\": \"2024-05-13T18:11:39.411Z\",\n        \"updated_at\": \"2024-05-13T18:11:39.411Z\"\n    },\n    {\n        \"id\": 28,\n        \"title\": \"Id laudantium consequuntur.\",\n        \"body\": \"Iure est vitae laborum velit esse dicta nisi animi distinctio.\",\n        \"user_id\": 32,\n        \"created_at\": \"2024-05-13T18:11:39.424Z\",\n        \"updated_at\": \"2024-05-13T18:11:39.424Z\"\n    },\n    {\n        \"id\": 29,\n        \"title\": \"Ab assumenda mollitia.\",\n        \"body\": \"Error eaque quas molestiae culpa soluta corporis vero animi cupiditate.\",\n        \"user_id\": 23,\n        \"created_at\": \"2024-05-13T18:11:39.437Z\",\n        \"updated_at\": \"2024-05-13T18:11:39.437Z\"\n    },\n    {\n        \"id\": 30,\n        \"title\": \"Odio fuga neque.\",\n        \"body\": \"Quas doloribus at magni ut culpa qui nesciunt reprehenderit est.\",\n        \"user_id\": 30,\n        \"created_at\": \"2024-05-13T18:11:39.453Z\",\n        \"updated_at\": \"2024-05-13T18:11:39.453Z\"\n    }\n]"
+						},
+						{
+							"name": "Filtered by user and ordered desc",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:3000/posts?page=3&top=true&user_id=24",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3000",
+									"path": [
+										"posts"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "3"
+										},
+										{
+											"key": "top",
+											"value": "true"
+										},
+										{
+											"key": "user_id",
+											"value": "24"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"32450e07a65320ed682f9ae5d0d06d12\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "2ea32e0b-1291-48c4-837e-7e8a097c00ef"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.176495"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=1.21, sql.active_record;dur=2.27, instantiation.active_record;dur=0.15, process_action.action_controller;dur=8.02"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 31434,\n        \"title\": \"Consequatur voluptates fugit.\",\n        \"body\": \"Provident tempora sit nesciunt repellendus recusandae eum voluptas quibusdam at.\",\n        \"user_id\": 24,\n        \"created_at\": \"2024-05-13T18:19:45.348Z\",\n        \"updated_at\": \"2024-05-13T18:19:45.348Z\"\n    },\n    {\n        \"id\": 31432,\n        \"title\": \"Ipsum hic delectus.\",\n        \"body\": \"Perferendis nisi autem et vel doloremque quia qui accusamus itaque.\",\n        \"user_id\": 24,\n        \"created_at\": \"2024-05-13T18:19:45.311Z\",\n        \"updated_at\": \"2024-05-13T18:19:45.311Z\"\n    },\n    {\n        \"id\": 31417,\n        \"title\": \"Aut veniam quasi.\",\n        \"body\": \"Rerum ipsum nam amet sunt rem minima nostrum unde qui.\",\n        \"user_id\": 24,\n        \"created_at\": \"2024-05-13T18:19:45.012Z\",\n        \"updated_at\": \"2024-05-13T18:19:45.012Z\"\n    },\n    {\n        \"id\": 31400,\n        \"title\": \"Veniam dolores quasi.\",\n        \"body\": \"Alias cumque voluptates possimus similique beatae voluptas doloribus debitis adipisci.\",\n        \"user_id\": 24,\n        \"created_at\": \"2024-05-13T18:19:44.745Z\",\n        \"updated_at\": \"2024-05-13T18:19:44.745Z\"\n    },\n    {\n        \"id\": 31318,\n        \"title\": \"Velit eius quia.\",\n        \"body\": \"Est eligendi ipsam consectetur laborum quos nostrum suscipit hic dolor.\",\n        \"user_id\": 24,\n        \"created_at\": \"2024-05-13T18:19:43.419Z\",\n        \"updated_at\": \"2024-05-13T18:19:43.419Z\"\n    },\n    {\n        \"id\": 31317,\n        \"title\": \"Sint aperiam nisi.\",\n        \"body\": \"Nihil enim consequatur esse doloremque et et autem quasi dolorum.\",\n        \"user_id\": 24,\n        \"created_at\": \"2024-05-13T18:19:43.404Z\",\n        \"updated_at\": \"2024-05-13T18:19:43.404Z\"\n    },\n    {\n        \"id\": 31297,\n        \"title\": \"Qui reprehenderit error.\",\n        \"body\": \"Illo accusantium quia eaque occaecati quaerat corporis et eos repellendus.\",\n        \"user_id\": 24,\n        \"created_at\": \"2024-05-13T18:19:43.110Z\",\n        \"updated_at\": \"2024-05-13T18:19:43.110Z\"\n    },\n    {\n        \"id\": 31281,\n        \"title\": \"Aperiam suscipit eveniet.\",\n        \"body\": \"At odio iste voluptatem provident dolore ut totam amet et.\",\n        \"user_id\": 24,\n        \"created_at\": \"2024-05-13T18:19:42.792Z\",\n        \"updated_at\": \"2024-05-13T18:19:42.792Z\"\n    },\n    {\n        \"id\": 31247,\n        \"title\": \"Ea eum in.\",\n        \"body\": \"Ea harum cupiditate et totam quis perspiciatis sit pariatur eos.\",\n        \"user_id\": 24,\n        \"created_at\": \"2024-05-13T18:19:42.137Z\",\n        \"updated_at\": \"2024-05-13T18:19:42.137Z\"\n    },\n    {\n        \"id\": 31223,\n        \"title\": \"Veniam aut dolores.\",\n        \"body\": \"Atque corrupti quos natus dolore assumenda possimus et fugiat debitis.\",\n        \"user_id\": 24,\n        \"created_at\": \"2024-05-13T18:19:41.554Z\",\n        \"updated_at\": \"2024-05-13T18:19:41.554Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3000/posts/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Show",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:3000/posts/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3000",
+									"path": [
+										"posts",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"894e366b8d2ac96137b4bfe25d97d03e\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "cfe62d27-6c1e-4f3d-8fa7-ee5f7c83801d"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.283832"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=1.13, sql.active_record;dur=1.81, instantiation.active_record;dur=0.06, process_action.action_controller;dur=119.86"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"title\": \"Tempora aut labore.\",\n    \"body\": \"In vero fugit quis quas aliquam sed omnis velit ea.\",\n    \"user_id\": 36,\n    \"created_at\": \"2024-05-13T18:11:39.013Z\",\n    \"updated_at\": \"2024-05-13T18:11:39.013Z\"\n}"
+						},
+						{
+							"name": "Show with reviews eager loaded",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:3000/posts/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3000",
+									"path": [
+										"posts",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"79d9d09ce6e7414bf43ea9019ec90cd9\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "41bf41f6-e6c7-4067-9aee-9ec67469eb0e"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.195109"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=1.22, sql.active_record;dur=3.17, instantiation.active_record;dur=0.23, process_action.action_controller;dur=7.99"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"title\": \"Tempora aut labore.\",\n    \"body\": \"In vero fugit quis quas aliquam sed omnis velit ea.\",\n    \"user_id\": 36,\n    \"created_at\": \"2024-05-13T18:11:39.013Z\",\n    \"updated_at\": \"2024-05-13T18:11:39.013Z\",\n    \"reviews\": [\n        {\n            \"id\": 960,\n            \"review\": \"Ut nihil deserunt.\",\n            \"user_id\": 25,\n            \"post_id\": 1,\n            \"created_at\": \"2024-05-13T18:21:03.009Z\",\n            \"updated_at\": \"2024-05-13T18:21:03.009Z\"\n        },\n        {\n            \"id\": 1001,\n            \"review\": \"Review\",\n            \"user_id\": 25,\n            \"post_id\": 1,\n            \"created_at\": \"2024-05-13T18:48:24.021Z\",\n            \"updated_at\": \"2024-05-13T18:48:24.021Z\"\n        },\n        {\n            \"id\": 1002,\n            \"review\": \"Review\",\n            \"user_id\": 25,\n            \"post_id\": 1,\n            \"created_at\": \"2024-05-13T18:48:48.802Z\",\n            \"updated_at\": \"2024-05-13T18:48:48.802Z\"\n        },\n        {\n            \"id\": 1003,\n            \"review\": \"Review\",\n            \"user_id\": 25,\n            \"post_id\": 1,\n            \"created_at\": \"2024-05-13T18:49:00.902Z\",\n            \"updated_at\": \"2024-05-13T18:49:00.902Z\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Create post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"post\": {\r\n        \"title\": \"TITLE\",\r\n        \"user_id\": 24,\r\n        \"body\": \"BODY\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/posts",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Validation errors",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"post\": {\r\n        \"title\": \"TITLE\",\r\n        \"user_id\": 24,\r\n        \"body\": \"BODY\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:3000/posts",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3000",
+									"path": [
+										"posts"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "996c4d9b-a73f-48e9-8bc1-98b1073a26f0"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "1.195337"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.81, sql.active_record;dur=2.14, process_action.action_controller;dur=1016.08"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": [\n        \"must exist\"\n    ],\n    \"body\": [\n        \"can't be blank\"\n    ]\n}"
+						},
+						{
+							"name": "Successfull creation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"post\": {\r\n        \"title\": \"TITLE\",\r\n        \"user_id\": 24,\r\n        \"body\": \"BODY\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:3000/posts",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3000",
+									"path": [
+										"posts"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Location",
+									"value": "http://127.0.0.1:3000/posts/31779"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"77e55a2fcbba3645351c656615c6e722\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "6cccb495-5beb-4c67-88d5-58fd619b4c67"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.204513"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.92, sql.active_record;dur=15.68, instantiation.active_record;dur=2.67, process_action.action_controller;dur=31.85"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 31779,\n    \"title\": \"TITLE\",\n    \"body\": \"BODY\",\n    \"user_id\": 24,\n    \"created_at\": \"2024-05-13T18:41:58.566Z\",\n    \"updated_at\": \"2024-05-13T18:41:58.566Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Reviews",
+			"item": [
+				{
+					"name": "Add a review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"review\": {\r\n        \"review\": \"Review\",\r\n        \"post_id\": 1,\r\n        \"user_id\": 25\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3000/reviews",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3000",
+							"path": [
+								"reviews"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add a review validation error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"review\": {\r\n        \"review\": \"Review\"\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:3000/reviews",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3000",
+									"path": [
+										"reviews"
+									]
+								}
+							},
+							"status": "Unprocessable Entity",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "a44a0556-4fe8-4da8-9e37-b8c3b87cd2d4"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "3.431027"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.87, sql.active_record;dur=2.12, process_action.action_controller;dur=15.92"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"user\": [\n        \"must exist\"\n    ],\n    \"post\": [\n        \"must exist\"\n    ]\n}"
+						},
+						{
+							"name": "Successfull addition",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"review\": {\r\n        \"review\": \"Review\",\r\n        \"post_id\": 1,\r\n        \"user_id\": 25\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:3000/reviews",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "3000",
+									"path": [
+										"reviews"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "strict-origin-when-cross-origin"
+								},
+								{
+									"key": "Location",
+									"value": "http://127.0.0.1:3000/reviews/1003"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"480dbdc3b8159b84544241278041193a\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "1a7291ab-e8f6-4272-b0b2-0a5a9321f85a"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "3.209601"
+								},
+								{
+									"key": "Server-Timing",
+									"value": "start_processing.action_controller;dur=0.87, sql.active_record;dur=17.79, instantiation.active_record;dur=4.21, process_action.action_controller;dur=41.61"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1003,\n    \"review\": \"Review\",\n    \"user_id\": 25,\n    \"post_id\": 1,\n    \"created_at\": \"2024-05-13T18:49:00.902Z\",\n    \"updated_at\": \"2024-05-13T18:49:00.902Z\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
