@@ -1,24 +1,13 @@
-# README
+Installation steps:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1 - Fix the database credentials in config/database.yml
+2 - run bundle install
+3 - run rails db:migrate to add the tables to the sqlite3 database
+4 - run rails db:seed to start adding fake users,posts and reviews
+5 - test via postman
 
-Things you may want to cover:
 
-* Ruby version
+Cases i see critical are attached in validation examples in postman
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+A post without a user provided.
+A review without a user or a post provided.
